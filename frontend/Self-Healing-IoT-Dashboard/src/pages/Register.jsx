@@ -19,13 +19,17 @@ const Register = ({ onBackToLogin }) => {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/auth/register", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(formData)
-      });
+     const API_BASE =
+  import.meta.env.VITE_API_BASE_URL ||
+  "https://selfheal-iot.onrender.com";
+
+const res = await fetch(`${API_BASE}/auth/register`, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({ name, email, password })
+});
 
       const data = await res.json();
 
