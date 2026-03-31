@@ -13,7 +13,7 @@ const Login = ({ onLoginSuccess, onRegisterClick }) => {
   import.meta.env.VITE_API_BASE_URL ||
   "https://selfheal-iot.onrender.com";
 
-const res = await fetch(`${API_BASE}/auth/Login`, {
+const res = await fetch(`${API_BASE}/auth/login`, {
   method: "POST",
   headers: {
     "Content-Type": "application/json"
