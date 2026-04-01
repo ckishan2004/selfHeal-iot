@@ -8,7 +8,7 @@ app = FastAPI(title="Self-Healing IoT AI")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins_regex=[
+    allow_origins=[
         "http://localhost:5173",
         "https://your-frontend-name.vercel.app",
     ],
