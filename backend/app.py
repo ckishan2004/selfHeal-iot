@@ -10,7 +10,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://your-frontend-name.vercel.app"
+        "https://your-frontend-name.vercel.app",
+        "https://self-heal-iot-xv1v-pt50sh5de-ckishan2004s-projects.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
