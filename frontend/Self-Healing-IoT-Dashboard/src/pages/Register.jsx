@@ -213,6 +213,7 @@ const Register = ({ onBackToLogin }) => {
               value={formData.password}
               onChange={handleChange}
               required
+              autoComplete="new-password"
             />
           </div>
 
